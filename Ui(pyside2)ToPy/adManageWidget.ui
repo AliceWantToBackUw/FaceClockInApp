@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdManageWidget</class>
+ <widget class="QWidget" name="AdManageWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1317</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>人员管理</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_ad_condition">
+        <property name="text">
+         <string>打卡状态</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_ee_infor">
+        <property name="text">
+         <string>修改员工信息</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="sw_manage">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>5</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QTableWidget" name="tw_infor">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>801</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>id</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>打卡时间</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>2021215219</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>涂鑫平</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>22:56</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>2021215218</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>tutu</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>22:59</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>2021215217</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>dada</string>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="text">
+         <string>未打卡</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>0</y>
+         <width>481</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>GroupBox</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="lb_start">
+          <property name="text">
+           <string>起始时间</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QTimeEdit" name="te_start"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="lb_end">
+          <property name="text">
+           <string>结束时间</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QTimeEdit" name="te_end"/>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QPushButton" name="btn_select_infor">
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" colspan="2">
+         <widget class="QPushButton" name="btn_infor_tocsv">
+          <property name="text">
+           <string>导出csv文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="4">
+         <widget class="QPushButton" name="btn_condition_back">
+          <property name="text">
+           <string>退出</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QScrollArea" name="sa_html">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>140</y>
+         <width>471</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="sa_widget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>469</width>
+          <height>409</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QPushButton" name="btn_add">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>130</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>新增人员信息</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_select">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>20</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>查询员工</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tw_condition">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>981</width>
+         <height>521</height>
+        </rect>
+       </property>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>id</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>头像</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>2021215219</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>zhaopian</string>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string>涂鑫平</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>2021215218</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>zhaopian</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>tutu</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="btn_condition_tocsv">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>370</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>导出为csv文件</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_back">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>500</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_delete">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>240</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>删减人员信息</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
